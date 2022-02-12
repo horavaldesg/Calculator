@@ -11,29 +11,37 @@ public class Calculator {
 		float secondNumber = kb.nextFloat();
 		System.out.println("Would you like to add, subtract, multiply or divide?");
 		System.out.print("> ");
-		String option = kb.next();
+		String option = kb.next().toLowerCase();
 		
-		switch(option.toLowerCase()){
-			case "add":
-			result = firstNumber + secondNumber;
-			System.out.println(firstNumber + " + " + secondNumber + " = " + result);
-			break;
-			case "subtract":
-			result = firstNumber - secondNumber;
-			System.out.println(firstNumber + " - " + secondNumber + " = " + result);
-			break;
-			case "multiply":
-			result = firstNumber * secondNumber;
-			System.out.println(firstNumber + " * " + secondNumber + " = " + result);
-			break;
-			case "divide":
-			result = firstNumber / secondNumber;
-			System.out.println(firstNumber + " / " + secondNumber + " = " + result);
-			break;
-			default: System.out.println("Not An Option");
-			break;
-			
-		}
+		
+		
+			switch(option){
+				case "add":
+				result = firstNumber + secondNumber;
+				System.out.println(firstNumber + " + " + secondNumber + " = " + result);
+				break;
+				case "subtract":
+				result = firstNumber - secondNumber;
+				System.out.println(firstNumber + " - " + secondNumber + " = " + result);
+				break;
+				case "multiply":
+				result = firstNumber * secondNumber;
+				System.out.println(firstNumber + " * " + secondNumber + " = " + result);
+				break;
+				case "divide":
+				if(secondNumber != 0){
+					result = firstNumber / secondNumber;
+					System.out.println(firstNumber + " / " + secondNumber + " = " + result);
+				}
+				else{
+					System.out.println("Error: Divide by Zero");
+				}
+				
+				break;
+				default: System.out.println("Not An Option");
+				break;
+			}
+		
 		
 
 		
