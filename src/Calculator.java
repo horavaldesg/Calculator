@@ -9,7 +9,7 @@ public class Calculator {
 
 		System.out.print("> ");
 		int secondNumber = kb.nextInt();
-		System.out.println("Would you like to add or subtract?");
+		System.out.println("Would you like to add, subtract, multiply or divide?");
 		System.out.print("> ");
 		String option = kb.next();
 		
@@ -21,6 +21,16 @@ public class Calculator {
 			case "subtract":
 			result = firstNumber - secondNumber;
 			System.out.println(firstNumber + " - " + secondNumber + " = " + result);
+			break;
+			case "multiply":
+			result = firstNumber * secondNumber;
+			System.out.println(firstNumber + " * " + secondNumber + " = " + result);
+			break;
+			case "divide":
+			result = firstNumber / secondNumber;
+			System.out.println(firstNumber + " / " + secondNumber + " = " + result);
+			break;
+			default: System.out.println("Not An Option");
 			break;
 			
 		}
