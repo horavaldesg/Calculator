@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class Calculator {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
-		int result = 0;
+		float result = 0;
 		System.out.println("Enter Two Number: ");
 		System.out.print("> ");
-		int firstNumber = kb.nextInt();
+		float firstNumber = kb.nextFloat();
 
 		System.out.print("> ");
-		int secondNumber = kb.nextInt();
+		float secondNumber = kb.nextFloat();
 		System.out.println("Would you like to add, subtract, multiply or divide?");
 		System.out.print("> ");
 		String option = kb.next();
