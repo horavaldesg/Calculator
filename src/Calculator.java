@@ -3,7 +3,7 @@ public class Calculator {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		float result = 0;
-		System.out.println("Enter Two Number: ");
+		System.out.println("Enter Two Numbers: ");
 		System.out.print("> ");
 		float firstNumber = kb.nextFloat();
 
@@ -41,7 +41,7 @@ public class Calculator {
 				default: System.out.println("Not An Option");
 				break;
 			}
-		
+		kb.close();
 		
 
 		
